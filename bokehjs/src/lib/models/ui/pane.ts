@@ -78,20 +78,6 @@ export class PaneView extends UIElementView {
       element_view.render_to(this.shadow_el)
     }
   }
-
-  override has_finished(): boolean {
-    if (!super.has_finished()) {
-      return false
-    }
-
-    for (const element_view of this.element_views) {
-      if (!element_view.has_finished()) {
-        return false
-      }
-    }
-
-    return true
-  }
 }
 
 export namespace Pane {

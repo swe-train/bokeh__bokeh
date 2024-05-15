@@ -19,6 +19,7 @@ type ElementOurAttrs =  {
 }
 
 type ElementCommonAttrs = {
+  id: Element["id"]
   title: HTMLElement["title"]
   tabIndex: HTMLOrSVGElement["tabIndex"]
 }
